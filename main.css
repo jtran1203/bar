@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  font-size: 100%;
+  line-height: 1.5em;
+  background-color: wheat;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li, div.button {
+  display: block;
+  width: 100%;
+  background-color: #555555;
+  text-align: center;
+  line-height: 4em;
+  font-size: 1.2em;
+}
+
+div.button {
+  height: 4em;
+  background-color: red;
+  border-bottom: 0.5em solid black;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: red;
+  display: block;
+}
+
+nav ul li a:hover:not(.active) {
+  color: black;
+  border: 2px solid red;
+  border-radius: 0.5em;
+}
+
+.active {
+  color: green;
+  border-radius: 0.5em;
+}
+
+header {
+  margin: 0;
+  background-image: url(beans.jpeg);
+  padding: 3em;
+  text-align: center;
+  border-bottom: 0.5em solid chocolate;
+  color: white;
+}
+
+header h1 {
+  font-size: 8em;
+  padding-top: 0.5em;
+  margin-bottom: 0.75em;
+}
+
+header p {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 2em;
+  font-family: fantasy;
+  line-height: 1.2em;
+}
+
+a.btn {
+  display: inline-block;;
+  text-transform: uppercase;
+  background-color: red;
+  color: black;
+  margin: 1em;
+  padding: 2em;
+  text-decoration: none;
+  border-radius: 2em;
+}
+
+a.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (min-width:500px) {
+
+  nav {
+    background-color: #555555;
+  }
+
+  nav ul li {
+    display: inline-block;
+    width: 8em;
+  }
+}
